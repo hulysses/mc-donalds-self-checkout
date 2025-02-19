@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ConsumptionOptionProps {
+  slug: string;
   imageUrl: string;
   imageAlt: string;
   buttonText: string;
@@ -12,6 +13,7 @@ interface ConsumptionOptionProps {
 }
 
 const ConsumptionOption = ({
+  slug,
   imageUrl,
   imageAlt,
   buttonText,
@@ -28,8 +30,10 @@ const ConsumptionOption = ({
             className="object-contain"
           />
         </div>
-        <Button variant="secondary" className="rounded-full">
-          <Link href={`/menu?consumptionOption=${option}`}>{buttonText}</Link>
+        <Button variant="secondary" className="rounded-full" asChild>
+          <Link href={`${slug}/menu?consumptionOption=${option}`}>
+            {buttonText}
+          </Link>
         </Button>
       </CardContent>
     </Card>
