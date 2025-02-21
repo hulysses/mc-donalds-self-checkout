@@ -1,8 +1,9 @@
-import { formatCurrency } from "@/helpers/format-currency";
 import { Product } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+
+import { formatCurrency } from "@/helpers/format-currency";
 
 interface ProductsProps {
   products: Product[];
@@ -16,10 +17,11 @@ const Products = ({ products }: ProductsProps) => {
         <Link
           key={product.id}
           href={`/${slug}/menu/${product.id}`}
-          className="flex items-center justify-between gap-10 py-3 border-b"
+          className="flex items-center justify-between gap-10 border-b py-3"
         >
-          <div className="text-sm font-medium">
-            <h3>{product.name}</h3>
+          {/* ESQUERDA */}
+          <div>
+            <h3 className="text-sm font-medium">{product.name}</h3>
             <p className="line-clamp-2 text-sm text-muted-foreground">
               {product.description}
             </p>
@@ -27,11 +29,13 @@ const Products = ({ products }: ProductsProps) => {
               {formatCurrency(product.price)}
             </p>
           </div>
+
+          {/* DIREITA */}
           <div className="relative min-h-[82px] min-w-[120px]">
             <Image
               src={product.imageUrl}
-              fill
               alt={product.name}
+              fill
               className="rounded-lg object-contain"
             />
           </div>
