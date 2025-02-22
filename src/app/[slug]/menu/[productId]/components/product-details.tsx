@@ -8,7 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { formatCurrency } from "@/helpers/format-currency";
 import { useContext, useState } from "react";
 import { CartContext } from "../../contexts/cart";
-import CartSheet from "./CartSheet";
+import CartSheet from "./cart-sheet";
 
 interface ProductDetailsProps {
   product: Prisma.ProductGetPayload<{
