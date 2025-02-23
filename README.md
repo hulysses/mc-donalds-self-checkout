@@ -11,6 +11,8 @@ O McDonald's Self Checkout é um sistema intuitivo de autoatendimento, desenvolv
 - Remover itens do carrinho.
 - Finalizar o pedido informando Nnome e CPF para acompanhar o status do pedido.
 
+https://github.com/user-attachments/assets/26d00d2f-32e1-460a-b448-eecfda6ac4dd
+
 ## 🌐 Deploy
 
 Acesse o projeto em produção pelo link abaixo:
