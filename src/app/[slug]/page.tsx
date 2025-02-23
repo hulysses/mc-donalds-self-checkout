@@ -15,7 +15,6 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
   }
   return (
     <div className="flex h-screen flex-col items-center justify-center px-6 pt-24">
-      {/* LOGO E TITULO */}
       <div className="flex flex-col items-center gap-2">
         <Image
           src={restaurant.avatarImageUrl}
@@ -25,7 +24,6 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
         />
         <h2 className="font-semibold">{restaurant.name}</h2>
       </div>
-      {/* BEM VINDO */}
       <div className="space-y-2 pt-24 text-center">
         <h3 className="text-2xl font-semibold">Seja bem-vindo!</h3>
         <p className="opacity-55">
