@@ -8,7 +8,8 @@ O McDonald's Self Checkout é um sistema intuitivo de autoatendimento, desenvolv
 - Filtrar os produtos por categorias.
 - Visualizar os itens disponíveis de forma clara e objetiva.
 - Definir a quantidade de cada item antes de finalizar o pedido.
-- Finalizar o pedido informando Nome e CPF para acompanhar o status do pedido.
+- Remover itens do carrinho.
+- Finalizar o pedido informando Nnome e CPF para acompanhar o status do pedido.
 
 ## 🌐 Deploy
 
