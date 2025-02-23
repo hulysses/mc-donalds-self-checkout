@@ -11,6 +11,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Mc Donanld's",
+  icons: {
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-mcdonalds-3384870-2822951.png?f=webp&w=256",
+  },
 };
 
 export default function RootLayout({
